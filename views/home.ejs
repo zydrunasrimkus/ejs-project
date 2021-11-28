@@ -1,0 +1,20 @@
+<%- include("partials/header") -%>
+<div class="container">
+    <h1>Home</h1>
+    <p class="posts"><%= homeStartingContent %></p>
+    <% posts.forEach(post => { %>
+    <p class="postsTitle">
+        <%= post.postTitle %>
+        </p>
+        <p class="posts">
+            <% 
+            function trim_words(string, number) {
+                shortString = string.split(/\s+/,number);
+                result = shortString.join(" ");
+                return result;
+            } %> 
+            <%= trim_words(post.postText, 20) + "..." %>
+            <a href="/posts/<%= post.postTitle %> ">Read more</a></p>
+        <%});%> 
+</div>
+<%- include("partials/footer") -%>

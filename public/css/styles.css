@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+/*COLORS*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #daddfc;
+  font-size: 16px;
+  color: #2e4c6d;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #daddfc;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #396eb0;
+}
+#navbar p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+.nav-logo {
+  margin: 0 100px;
+  color: #daddfc;
+}
+
+.nav-buttons {
+  display: flex;
+  list-style-type: none;
+  margin: 0 100px;
+}
+.nav-buttons li {
+  background-color: #2e4c6d;
+  padding: 10px 0px;
+}
+.nav-buttons li:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.nav-buttons li:nth-child(3) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-buttons li:hover {
+  background-color: #fc997c;
+}
+.nav-buttons li a {
+  padding: 10px 15px;
+}
+.nav-buttons li a:hover {
+  color: #2e4c6d;
+}
+
+.posts {
+  max-width: 100%;
+}
+.posts a {
+  color: #2e4c6d;
+  font-weight: 700;
+}
+
+.postsTitle {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.container h1 {
+  margin: 20px 0;
+}
+.container p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+form input, form textarea {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  resize: none;
+  margin-bottom: 15px;
+  border: 0px solid;
+  border-radius: 5px;
+}
+form input:focus, form textarea:focus {
+  outline: none;
+  border: solid 1px #396eb0;
+  margin-bottom: 13px;
+}
+form input {
+  line-height: normal;
+  padding: 10px 10px;
+}
+form textarea {
+  line-height: normal;
+  padding: 10px 10px;
+}
+form button {
+  background-color: #396eb0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #daddfc;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #fc997c;
+  color: #396eb0;
+}
+
+.fixMargin {
+  margin-top: 20px;
+}
+
+footer {
+  display: block;
+  background-color: #396eb0;
+  color: #daddfc;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  padding: 5px 0;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

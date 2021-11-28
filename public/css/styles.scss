@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/*COLORS*/
+$darkBlue: rgb(46, 76, 109);
+$blue: rgb(57, 110, 176);
+$semiPurple: rgb(218, 221, 252);
+$orange: rgb(252, 153, 124);
+
+$pageMargin: 0 100px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $semiPurple;
+    font-size: 16px;
+    color: $darkBlue;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: $semiPurple;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: $blue;
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.container {
+    margin: $pageMargin;
+}
+
+.nav-logo {
+    margin: $pageMargin;
+    color: $semiPurple
+}
+
+.nav-buttons {
+    display: flex;
+    list-style-type: none;
+    margin: $pageMargin;
+    li {
+        background-color: $darkBlue;
+        padding: 10px 0px;
+        &:nth-child(1) {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &:hover {
+            background-color: $orange;
+        }
+        a {
+            padding: 10px 15px;
+            &:hover {
+                color: $darkBlue;
+            }
+        }
+    }
+}
+
+.posts {
+    max-width: 100%;
+    a {
+        color:$darkBlue;
+        font-weight: 700;
+    }
+}
+
+.postsTitle {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.container {
+    h1 {
+        margin: 20px 0;;
+    }
+    p {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+form {
+    label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 5px;   
+    }
+    input, textarea {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        resize: none;
+        margin-bottom: 15px;
+        border: 0px solid;
+        border-radius: 5px;
+        &:focus {
+            outline: none;
+            border: solid 1px $blue;
+            margin-bottom: 13px;
+        }
+    }
+    input {
+        line-height: normal;
+        padding: 10px 10px;
+    }
+    textarea {
+        line-height: normal;
+        padding: 10px 10px;
+    }
+    button {
+        background-color: $blue;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: $semiPurple;
+        font-size: 0.95rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $orange;
+            color: $blue
+        }
+    }
+}
+
+.fixMargin {
+    margin-top: 20px;
+}
+
+footer {
+    display: block;
+    background-color: $blue;
+    color: $semiPurple;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 5px 0;
+    p {
+        margin: 0;
+    }
+}
